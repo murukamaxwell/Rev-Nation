@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rev Nation Reviews</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #1c1c1c;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .rating-summary {
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+
+    .average-rating {
+      font-size: 48px;
+      color: #fbb034;
+    }
+
+    .bar {
+      display: flex;
+      align-items: center;
+      margin: 6px 0;
+    }
+
+    .bar span {
+      width: 40px;
+      font-weight: bold;
+    }
+
+    .bar .bar-inner {
+      flex: 1;
+      height: 10px;
+      background: #e0e0e0;
+      margin-left: 10px;
+      position: relative;
+      border-radius: 5px;
+    }
+
+    .bar .bar-fill {
+      background: #fbb034;
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    .review {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .review img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .review-content {
+      flex: 1;
+    }
+
+    .review-content h4 {
+      margin: 0;
+    }
+
+    .stars {
+      color: #fbb034;
+    }
+
+    .service {
+      color: #777;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    @media (max-width: 600px) {
+      .review {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .review img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rev Nation Reviews</h1>
+    <p>Trusted by car owners across the region</p>
+  </header>
+
+  <div class="container">
+    <!-- Rating Summary -->
+    <div class="rating-summary">
+      <div class="average-rating">4.4 ★</div>
+      <p>Based on 12 reviews</p>
+
+      <div class="bar"><span>5 ★</span><div class="bar-inner"><div class="bar-fill" style="width: 50%;"></div></div></div>
+      <div class="bar"><span>4 ★</span><div class="bar-inner"><div class="bar-fill" style="width: 30%;"></div></div></div>
+      <div class="bar"><span>3 ★</span><div class="bar-inner"><div class="bar-fill" style="width: 15%;"></div></div></div>
+      <div class="bar"><span>2 ★</span><div class="bar-inner"><div class="bar-fill" style="width: 5%; background:#f66;"></div></div></div>
+    </div>
+
+    <!-- Reviews List -->
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User photo">
+      <div class="review-content">
+        <h4>Jamal R.</h4>
+        <div class="stars">★★★★★</div>
+        <div class="service">Engine Tuning</div>
+        <p>Car feels brand new! The tuning really unlocked performance I didn’t know was possible.</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="User photo">
+      <div class="review-content">
+        <h4>Sandra N.</h4>
+        <div class="stars">★★★★☆</div>
+        <div class="service">Maintenance & Repairs</div>
+        <p>Great service overall. Took a bit longer than expected but worth the wait.</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/men/48.jpg" alt="User photo">
+      <div class="review-content">
+        <h4>Mike T.</h4>
+        <div class="stars">★★★☆☆</div>
+        <div class="service">Vehicle Listing</div>
+        <p>Listed my car here. Got some calls, but wish it sold faster. Staff was helpful though.</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/women/70.jpg" alt="User photo">
+      <div class="review-content">
+        <h4>Rita K.</h4>
+        <div class="stars">★★★★★</div>
+        <div class="service">OEM Parts</div>
+        <p>Hard-to-find part delivered and installed quickly. Totally impressed!</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="User photo">
+      <div class="review-content">
+        <h4>Kevin D.</h4>
+        <div class="stars">★★★★☆</div>
+        <div class="service">Aftermarket Mods</div>
+        <p>Installed new exhaust and air intake — the car growls now. Very professional!</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="User photo">
+      <div class="review-content">
+        <h4>Natasha O.</h4>
+        <div class="stars">★★★☆☆</div>
+        <div class="service">Maintenance</div>
+        <p>Good pricing, but I had to return for a minor fix. Still, they handled it well.</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/men/18.jpg" alt="User photo">
+      <div class="review-content">
+        <h4>Elvis A.</h4>
+        <div class="stars">★★★★☆</div>
+        <div class="service">Engine Tuning</div>
+        <p>Noticeable difference in performance. These guys know what they’re doing.</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User photo">
+      <div class="review-content">
+        <h4>Fatima M.</h4>
+        <div class="stars">★★★★★</div>
+        <div class="service">Car Repairs</div>
+        <p>My brakes were shot. Fixed in a day and now smooth as ever. Thank you!</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="User photo">
+      <div class="review-content">
+        <h4>Tom J.</h4>
+        <div class="stars">★★★☆☆</div>
+        <div class="service">Parts Purchase</div>
+        <p>Parts were okay, but shipping delayed. Staff offered discount later — nice touch.</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/women/80.jpg" alt="User photo">
+      <div class="review-content">
+        <h4>Alice P.</h4>
+        <div class="stars">★★★★★</div>
+        <div class="service">Car Sale</div>
+        <p>Sold my old Honda fast! Great platform for car owners needing visibility.</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="User photo">
+      <div class="review-content">
+        <h4>Daniel G.</h4>
+        <div class="stars">★★★★☆</div>
+        <div class="service">Maintenance</div>
+        <p>Very clean workshop and organized team. Will return for next service.</p>
+      </div>
+    </div>
+
+    <div class="review">
+      <img src="https://randomuser.me/api/portraits/women/51.jpg" alt="User photo">
+      <div class="review-content">
+        <h4>Kemi O.</h4>
+        <div class="stars">★★★☆☆</div>
+        <div class="service">Aftermarket Install</div>
+        <p>Installation was okay, but one part didn’t fit. They replaced it free though.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2025 Rev Nation Garage. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
